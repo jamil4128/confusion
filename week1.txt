@@ -1,0 +1,80 @@
+git
+----------------------
+
+>>git --version
+to check the version of git installed
+>>git config --global user.name "Jamil"
+set the user user.name
+>>git config --global user.gmail "Jamilahmedchowdhury4128@gmail.com"
+
+>>git config --list 
+to check the list of configuration
+
+-------------------------
+basic git commands
+-------------------------
+>>git init
+initialize as a git repository
+
+>>git status
+shows the status of the repo
+
+>> git add . 
+(.) indicates that all the file will be added to the staging area
+
+>>git commit -m "first commit"
+commits the message "first commit"
+
+>>git log --oneline
+will display the hash ID of the commit 
+
+>>git checkout <commit ID><file>
+to checkout a file from a previous commit
+
+>>git reset HEAD index.html
+revert back to the latest commit with unstage
+
+>>git checkout -- index.html (will pull the latest comment )
+
+>>git reset <fileName>
+unstage a staged file but leave working directory unchanged
+
+>> git reset
+reset the staging area to the last commit without disturbing the working directory
+
+------------------------------
+Online git repositories
+------------------------------
+
+>>git remote add origin <url>
+Add the remote online repository
+
+>>git push -u origin master
+push the local git repo to the origin to the master branch
+
+>>git clone <url>
+clone the online repo to local repo
+
+-------------------------
+npm and node
+-------------------------
+>> npm init
+initialize npm 
+and then edit the json file conatinging author name or other so on
+
+>>npm install light-server --save -dev 
+install light server
+save the data
+for development dependency 
+
+>>to start the server
+npm start (package.json we need to add
+            "start":"npm run lite",
+            "lite":"light-server"
+            )
+npm start === npm run lite === npm run light-server
+
+
+>>create a file named ".gitignore"
+>> in the file type "node_modules"
+this will ignore the node modules in the git repo

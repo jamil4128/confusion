@@ -4,3 +4,6 @@ introduction to bootstrap
 >>npm install jquery@3.3.1 popper.js@1.12.9 --save
 ------------
 Bootstrap by default uses Helvetica Neue for the font.
+-------------------------------------------
+navbar
+--------------------------------------------

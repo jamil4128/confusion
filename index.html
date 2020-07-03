@@ -3,19 +3,19 @@
 
 <head>
     <title>Ristorante Con Fusion</title>
-        <!-- Required meta tags always come first -->
-        <meta charset="utf-8"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-    
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <!-- font awesome -->
-        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
 
 
-        <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -32,11 +32,11 @@
                     <li class="nav-item"><a href="aboutus.html" class="nav-link"><span class="fa fa-info  fa-lg"></span> About</a></li>
                     <li class="nav-item"><a href="#" class="nav-link"><span class="fa fa-list fa-lg"></span> Menu</a></li>
                     <li class="nav-item"><a href="contactus.html" class="nav-link"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
-    
+
                 </ul>
 
             </div>
-            
+
         </div>
     </nav>
 
@@ -62,12 +62,13 @@
                 <div class="media">
                     <img class="img-thumbnail mr-3 d-flex align-self-center" src="img/uthappizza.png" alt="uthappizza">
                     <div class="media-body">
-                        <h2 class="mt-0">Uthappizza</h2>
+                        <h2 class="mt-0">Uthappizza<span class="badge badge-danger">HOT</span>
+                            <span class="badge badge-pill badge-secondary">$4.99</span></h2>
                         <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                     </div>
-                    
+
                 </div>
-                
+
             </div>
         </div>
 
@@ -100,10 +101,70 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-sm-8 offset-md-2">
+            <div class="card align-self-center">
+                <div class="card-header bg-warning text-white h3">Reserve a Table</div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group row">
+                            <label class="col-12 col-md-2 col-form-label" for="guests">Number of Guests</label>
+                            <div class="col-12 col-md-10">
+                                <div class="form-check form-check-inline ">
+                                    <input type="radio" class="form-check-input" id="radio1" value="1">
+                                    <label class="form-check-label" for="radio1">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="radio2" value="2">
+                                    <label class="form-check-label" for="radio2">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="radio3" value="3">
+                                    <label class="form-check-label" for="radio3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="radio4" value="4">
+                                    <label class="form-check-label" for="radio4">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="radio5" value="5">
+                                    <label class="form-check-label" for="radio5">5</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="radio6" value="6">
+                                    <label class="form-check-label" for="radio6">6</label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-12 col-md-2 col-form-label" for="date">Date and Time</label>
+                            <div class="col-12 col-md-10">
+                                <div class="form-row">
+                                    <div class="col-12 col-md-6 mb-2">
+                                        <input class="form-control" type="text" placeholder="Date" id="date" name="date">
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <input class="form-control" type="text" placeholder="Time" id="time" name="time">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="offset-md-2 col-md-10">
+                                <button class="btn btn-primary">Reserve</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="container">
-            <div class="row">             
+            <div class="row">
                 <div class="col-4 col-sm-2 offset-1">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
@@ -134,18 +195,18 @@
                         <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o  fa-lg"></i></a>
                     </div>
                 </div>
-           </div>
-           <div class="row justify-content-center">             
+            </div>
+            <div class="row justify-content-center">
                 <div class="col-auto">
                     <p>© Copyright 2018 Ristorante Con Fusion</p>
                 </div>
-           </div>
+            </div>
         </div>
     </footer>
-        <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
 

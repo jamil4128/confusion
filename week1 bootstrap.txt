@@ -4,6 +4,92 @@ introduction to bootstrap
 >>npm install jquery@3.3.1 popper.js@1.12.9 --save
 ------------
 Bootstrap by default uses Helvetica Neue for the font.
--------------------------------------------
-navbar
---------------------------------------------
+-----------------------------------------------------
+From bootstrap official site 
+                            Grid system
+-----------------------------------------------------------
+                            Auto layout columns
+>>.container-fluid 
+for width: 100% across all viewport and device sizes
+>>.container 
+for a responsive pixel width
+>>.no-gutters on the .row
+you can remove the margin from rows and padding from columns
+
+Gutter width - 30px (15px on each side of a column)
+
+>>col-{breakpoint}-auto // example: col-sm-auto
+To size the size column based on natural width of their content
+>>.w-100 (<div class="w-100"></div>)
+where you want the columns to break to a new line
+
+                            alignment
+
+                            items for rows self for columns
+>>.align-items-start
+top-will be in row 1 amongst 3 rows
+>>.align-items-center
+middle-will be in row 2 amongst 3 rows
+>>.align-items-end
+bottom-will be in row 3 amongst 3 rows
+
+>>.align-self-start
+left- will be column 1 amongst 3 columns
+>>.align-self-center
+middle- will be column 2 amongst 3 columns
+>>.align-self-end
+right- will be column 3 among 3 columns
+
+>>.justify-content-start
+space at the end
+>>.justify-content-center
+space equally both side around the content i.e start and end
+>>.justify-content-end
+space at the start
+>>.justify-content-around
+space equally between the elements i.e start, end and between them
+>>.justify-content-between
+space between the content
+
+                    ordering
+            support from .order-1 to .order-12
+>>.order-sm-2
+                    offset
+>>.offset-sm-2
+will offset two columns for small to xl size width
+                marging
+>>.ml-md-auto
+margin left auto for medium to xl size width
+>>.mr-md-auto
+margin right auto for medium to xl size width
+
+
+                                    media
+                        --------------------------
+>>.media
+upper most class will contain the picture and the title
+>>.media-body
+media body will countain the title and article about the image
+
+                                    typography
+                        ----------------------------
+>>.text-muted
+to recreate the small secondary heading
+>>.lead
+>>.blockquote
+quoatation
+>>.blockquote-footer
+to indigate the quoatation of someone
+>>cite 
+source
+>>text-center
+alignment
+
+
+>>list-unstyled
+no styling in list
+>>list-inline
+inlining the list elements
+
+
+

@@ -6,10 +6,11 @@
 // Height variables
 @carousel-item-height: 300px;
 
-.zero-margin(@pad-up-dn:0px,@pad-left-right:0px){
-    margin: 0px auto;
-    padding: @pad-up-dn @pad-left-right;
+.zero-margin (@pad-up-dn: 0px, @pad-left-right: 0px) {
+	margin:0px auto;
+	padding: @pad-up-dn @pad-left-right;
 }
+
 .row-header{
     .zero-margin();
 }
@@ -52,19 +53,22 @@ body{
     border-bottom: 1px solid @lt-gray;
     padding: 10px;
 }
-.carousel{
-    background: @background-dark;
-    .carousel{
+
+.carousel {
+    background:@background-dark;
+
+    .carousel-item {
         height: @carousel-item-height;
-    }
-    img{
-        position: absolute;
-        top:0px;
-        left: 0px;
-        min-height: 300px;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-height: 300px;
+        }
     }
 }
-#carouselButton {
+
+#carouselbutton {
     right:0px;
     position: absolute;
     bottom: 0px;

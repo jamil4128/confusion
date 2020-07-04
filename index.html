@@ -50,31 +50,72 @@
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Login </h4>
+                    <h4 class="modal-title">Reserve a Table</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
                     <form>
-                        <div class="form-row">
-                            <div class="form-group col-sm-4">
-                                <label class="sr-only" for="exampleInputEmail3">Email address</label>
-                                <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                        <div class="form-group row">
+                            <label class="col-12 col-md-2 col-form-label" for="guests">Number of Guests</label>
+                            <div class="col-12 col-md-10">
+                                <div class="form-check form-check-inline align-self-center">
+                                    <input type="radio" class="form-check-input" id="radio1" value="1">
+                                    <label class="form-check-label" for="radio1">1</label>
+                                </div>
+                                <div class="form-check form-check-inline align-self-center">
+                                    <input type="radio" class="form-check-input" id="radio2" value="2">
+                                    <label class="form-check-label" for="radio2">2</label>
+                                </div>
+                                <div class="form-check form-check-inline align-self-center">
+                                    <input type="radio" class="form-check-input" id="radio3" value="3">
+                                    <label class="form-check-label" for="radio3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline align-self-center">
+                                    <input type="radio" class="form-check-input" id="radio4" value="4">
+                                    <label class="form-check-label" for="radio4">4</label>
+                                </div>
+                                <div class="form-check form-check-inline align-self-center">
+                                    <input type="radio" class="form-check-input" id="radio5" value="5">
+                                    <label class="form-check-label" for="radio5">5</label>
+                                </div>
+                                <div class="form-check form-check-inline align-self-center">
+                                    <input type="radio" class="form-check-input" id="radio6" value="6">
+                                    <label class="form-check-label" for="radio6">6</label>
+                                </div>
                             </div>
-                            <div class="form-group col-sm-4">
-                                <label class="sr-only" for="exampleInputPassword3">Password</label>
-                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
-                            </div>
-                            <div class="col-sm-auto">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox">
-                                    <label class="form-check-label"> Remember me
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-12 col-md-2 col-form-label" for="section">Section</label>
+                            <div class="col-12 col-md-10">
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-success active">
+                                      <input type="radio" name="non-smoking" id="non-smoking" autocomplete="off" checked> Non-smoking
                                     </label>
+                                    <label class="btn btn-danger">
+                                      <input type="radio" name="smoking" id="smoking" autocomplete="off"> Smoking
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-12 col-md-2 col-form-label" for="date">Date and Time</label>
+                            <div class="col-12 col-md-10">
+                                <div class="form-row">
+                                    <div class="col-12 col-md-6 mb-2">
+                                        <input class="form-control" type="text" placeholder="Date" id="date" name="date">
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <input class="form-control" type="text" placeholder="Time" id="time" name="time">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="form-row">
-                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                            <div class="offset-md-2 col-md-10">
+                                <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Reserve</button>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -94,7 +135,7 @@
                         <img src="img/logo.png" class="img-fluid">
                     </div>
                     <div class="col-12 col-sm-6 align-self-center">
-                        <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="tooltip" data-html="true" title="Or Call us at  <br><strong>+852 12345678</strong>" data-placement="bottom" href="#reserveform">Reserve Table</a>
+                        <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="modal" href="#loginModal">Reserve Table</a>
                     </div>
                 </div>
 
